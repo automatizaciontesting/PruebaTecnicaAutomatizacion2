@@ -1,0 +1,449 @@
+<html lang='en'><head><link href='prism/prism.css' rel='stylesheet' /></head><body><script src='prism/prism.js'></script><body><div><pre><code class='language-html'>&lt;html&gt;<br/>
+ &lt;head&gt; <br/>
+  &lt;title&gt;ACME demo app&lt;/title&gt; <br/>
+  &lt;meta charset="utf-8"&gt; <br/>
+  &lt;meta content="ie=edge" http-equiv="x-ua-compatible"&gt; <br/>
+  &lt;meta content="Applitools Visual testing" name="keywords"&gt; <br/>
+  &lt;meta content="ACME demo app" name="description"&gt; <br/>
+  &lt;meta content="width=device-width, initial-scale=1" name="viewport"&gt; <br/>
+  &lt;link href="favicon.png" rel="shortcut icon"&gt; <br/>
+  &lt;link href="apple-touch-icon.png" rel="apple-touch-icon"&gt; <br/>
+  &lt;link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500" rel="stylesheet" type="text/css"&gt; <br/>
+  &lt;link href="css/ft.css" rel="stylesheet"&gt; <br/>
+ &lt;/head&gt; <br/>
+ &lt;body class="menu-position-side menu-side-left full-screen"&gt; <br/>
+  &lt;div class="all-wrapper solid-bg-all"&gt; &lt;!--<br/>
+      START - Top Bar<br/>
+      --------------------&gt; <br/>
+   &lt;div class="top-bar color-scheme-bright"&gt; <br/>
+    &lt;div class="logo-w menu-size"&gt; &lt;a class="logo" href="#"&gt; <br/>
+      &lt;div class="logo-element"&gt;&lt;/div&gt; <br/>
+      &lt;div class="logo-label"&gt;<br/>
+        ACME <br/>
+      &lt;/div&gt; &lt;/a&gt; <br/>
+    &lt;/div&gt; &lt;!--<br/>
+        START - Top Menu Controls<br/>
+        --------------------&gt; <br/>
+    &lt;div class="top-menu-controls"&gt; <br/>
+     &lt;div style="color:rgb(24, 19, 19);margin-right:50px;display:none;" id="newFeature"&gt; &lt;a style="color:white;margin-right:50px;font-weight:bold;" href="/hackathonChartV2.html"&gt;See Credit Score!&lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div style="color:white;margin-right:50px;"&gt; &lt;a id="showExpensesChart" style="color:white;margin-right:50px;font-weight:bold;" href="/hackathonChartV2.html"&gt;Compare Expenses&lt;/a&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="element-search autosuggest-search-activator"&gt; <br/>
+      &lt;input placeholder="Start typing to search..." type="text"&gt; <br/>
+     &lt;/div&gt; &lt;!--<br/>
+          START - Messages Link in secondary top menu<br/>
+          --------------------&gt; <br/>
+     &lt;div class="messages-notifications os-dropdown-trigger os-dropdown-position-left"&gt; &lt;i class="os-icon os-icon-mail-14"&gt;&lt;/i&gt; <br/>
+      &lt;div class="new-messages-count"&gt;<br/>
+        7 <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="os-dropdown light message-list"&gt; <br/>
+       &lt;ul&gt; <br/>
+        &lt;li&gt; &lt;a href="#"&gt; <br/>
+          &lt;div class="user-avatar-w"&gt; <br/>
+           &lt;img alt="" src="img/avatar1.jpg"&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="message-content"&gt; <br/>
+           &lt;h6 class="message-from"&gt; John Mayers &lt;/h6&gt; <br/>
+           &lt;h6 class="message-title"&gt; Account Update &lt;/h6&gt; <br/>
+          &lt;/div&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li&gt; &lt;a href="#"&gt; <br/>
+          &lt;div class="user-avatar-w"&gt; <br/>
+           &lt;img alt="" src="img/avatar2.jpg"&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="message-content"&gt; <br/>
+           &lt;h6 class="message-from"&gt; Phil Jones &lt;/h6&gt; <br/>
+           &lt;h6 class="message-title"&gt; Secutiry Updates &lt;/h6&gt; <br/>
+          &lt;/div&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li&gt; &lt;a href="#"&gt; <br/>
+          &lt;div class="user-avatar-w"&gt; <br/>
+           &lt;img alt="" src="img/avatar3.jpg"&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="message-content"&gt; <br/>
+           &lt;h6 class="message-from"&gt; Bekky Simpson &lt;/h6&gt; <br/>
+           &lt;h6 class="message-title"&gt; Vacation Rentals &lt;/h6&gt; <br/>
+          &lt;/div&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li&gt; &lt;a href="#"&gt; <br/>
+          &lt;div class="user-avatar-w"&gt; <br/>
+           &lt;img alt="" src="img/avatar4.jpg"&gt; <br/>
+          &lt;/div&gt; <br/>
+          &lt;div class="message-content"&gt; <br/>
+           &lt;h6 class="message-from"&gt; Alice Priskon &lt;/h6&gt; <br/>
+           &lt;h6 class="message-title"&gt; Payment Confirmation &lt;/h6&gt; <br/>
+          &lt;/div&gt; &lt;/a&gt; &lt;/li&gt; <br/>
+       &lt;/ul&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; &lt;!--<br/>
+          END - Messages Link in secondary top menu<br/>
+          --------------------&gt; &lt;!--<br/>
+          START - Settings Link in secondary top menu<br/>
+          --------------------&gt; <br/>
+     &lt;div class="top-icon top-settings os-dropdown-trigger os-dropdown-position-left"&gt; &lt;i class="os-icon os-icon-ui-46"&gt;&lt;/i&gt; <br/>
+      &lt;div class="os-dropdown"&gt; <br/>
+       &lt;div class="icon-w"&gt; &lt;i class="os-icon os-icon-ui-46"&gt;&lt;/i&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;ul&gt; <br/>
+        &lt;li&gt; &lt;a href=""&gt;&lt;i class="os-icon os-icon-ui-49"&gt;&lt;/i&gt;&lt;span&gt;Profile Settings&lt;/span&gt;&lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li&gt; &lt;a href=""&gt;&lt;i class="os-icon os-icon-grid-10"&gt;&lt;/i&gt;&lt;span&gt;Billing Info&lt;/span&gt;&lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li&gt; &lt;a href=""&gt;&lt;i class="os-icon os-icon-ui-44"&gt;&lt;/i&gt;&lt;span&gt;My Invoices&lt;/span&gt;&lt;/a&gt; &lt;/li&gt; <br/>
+        &lt;li&gt; &lt;a href=""&gt;&lt;i class="os-icon os-icon-ui-15"&gt;&lt;/i&gt;&lt;span&gt;Cancel Account&lt;/span&gt;&lt;/a&gt; &lt;/li&gt; <br/>
+       &lt;/ul&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; &lt;!--<br/>
+          END - Settings Link in secondary top menu<br/>
+          --------------------&gt; &lt;!--<br/>
+          START - User avatar and menu in secondary top menu<br/>
+          --------------------&gt; <br/>
+     &lt;div class="logged-user-w"&gt; <br/>
+      &lt;div class="logged-user-i"&gt; <br/>
+       &lt;div class="avatar-w"&gt; <br/>
+        &lt;img alt="" src="img/avatar1.jpg"&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; &lt;!--<br/>
+          END - User avatar and menu in secondary top menu<br/>
+          --------------------&gt; <br/>
+    &lt;/div&gt; &lt;!--<br/>
+        END - Top Menu Controls<br/>
+        --------------------&gt; <br/>
+   &lt;/div&gt; &lt;!--<br/>
+      END - Top Bar<br/>
+      --------------------&gt; <br/>
+   &lt;div class="search-with-suggestions-w"&gt; <br/>
+    &lt;div class="search-with-suggestions-modal"&gt; <br/>
+     &lt;div class="element-search"&gt; <br/>
+      &lt;input class="search-suggest-input" placeholder="Start typing to search..." type="text"&gt; <br/>
+      &lt;div class="close-search-suggestions"&gt; &lt;i class="os-icon os-icon-x"&gt;&lt;/i&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="search-suggestions-group"&gt; <br/>
+      &lt;div class="ssg-header"&gt; <br/>
+       &lt;div class="ssg-icon"&gt; <br/>
+        &lt;div class="os-icon os-icon-box"&gt;&lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="ssg-name"&gt;<br/>
+         Projects <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="ssg-info"&gt;<br/>
+         24 Total <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="ssg-content"&gt; <br/>
+       &lt;div class="ssg-items ssg-items-boxed"&gt; &lt;a class="ssg-item" href="#"&gt; <br/>
+         &lt;div class="item-media" style="background-image: url(img/company6.png)"&gt;&lt;/div&gt; <br/>
+         &lt;div class="item-name"&gt;<br/>
+           Integ&lt;span&gt;ration&lt;/span&gt; with API <br/>
+         &lt;/div&gt; &lt;/a&gt;&lt;a class="ssg-item" href="#"&gt; <br/>
+         &lt;div class="item-media" style="background-image: url(img/company7.png)"&gt;&lt;/div&gt; <br/>
+         &lt;div class="item-name"&gt;<br/>
+           Deve&lt;span&gt;lopm&lt;/span&gt;ent Project <br/>
+         &lt;/div&gt; &lt;/a&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="search-suggestions-group"&gt; <br/>
+      &lt;div class="ssg-header"&gt; <br/>
+       &lt;div class="ssg-icon"&gt; <br/>
+        &lt;div class="os-icon os-icon-users"&gt;&lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="ssg-name"&gt;<br/>
+         Customers <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="ssg-info"&gt;<br/>
+         7 Total <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="ssg-content"&gt; <br/>
+       &lt;div class="ssg-items ssg-items-list"&gt; &lt;a class="ssg-item" href="#"&gt; <br/>
+         &lt;div class="item-media" style="background-image: url(img/avatar1.jpg)"&gt;&lt;/div&gt; <br/>
+         &lt;div class="item-name"&gt;<br/>
+           John Ma&lt;span&gt;yer&lt;/span&gt;s <br/>
+         &lt;/div&gt; &lt;/a&gt;&lt;a class="ssg-item" href="#"&gt; <br/>
+         &lt;div class="item-media" style="background-image: url(img/avatar2.jpg)"&gt;&lt;/div&gt; <br/>
+         &lt;div class="item-name"&gt;<br/>
+           Th&lt;span&gt;omas&lt;/span&gt; Mullier <br/>
+         &lt;/div&gt; &lt;/a&gt;&lt;a class="ssg-item" href="#"&gt; <br/>
+         &lt;div class="item-media" style="background-image: url(img/avatar3.jpg)"&gt;&lt;/div&gt; <br/>
+         &lt;div class="item-name"&gt;<br/>
+           Kim C&lt;span&gt;olli&lt;/span&gt;ns <br/>
+         &lt;/div&gt; &lt;/a&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;div class="search-suggestions-group"&gt; <br/>
+      &lt;div class="ssg-header"&gt; <br/>
+       &lt;div class="ssg-icon"&gt; <br/>
+        &lt;div class="os-icon os-icon-folder"&gt;&lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="ssg-name"&gt;<br/>
+         Files <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="ssg-info"&gt;<br/>
+         17 Total <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+      &lt;div class="ssg-content"&gt; <br/>
+       &lt;div class="ssg-items ssg-items-blocks"&gt; &lt;a class="ssg-item" href="#"&gt; <br/>
+         &lt;div class="item-icon"&gt; &lt;i class="os-icon os-icon-file-text"&gt;&lt;/i&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div class="item-name"&gt;<br/>
+           Work&lt;span&gt;Not&lt;/span&gt;e.txt <br/>
+         &lt;/div&gt; &lt;/a&gt;&lt;a class="ssg-item" href="#"&gt; <br/>
+         &lt;div class="item-icon"&gt; &lt;i class="os-icon os-icon-film"&gt;&lt;/i&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div class="item-name"&gt;<br/>
+           V&lt;span&gt;ideo&lt;/span&gt;.avi <br/>
+         &lt;/div&gt; &lt;/a&gt;&lt;a class="ssg-item" href="#"&gt; <br/>
+         &lt;div class="item-icon"&gt; &lt;i class="os-icon os-icon-database"&gt;&lt;/i&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div class="item-name"&gt;<br/>
+           User&lt;span&gt;Tabl&lt;/span&gt;e.sql <br/>
+         &lt;/div&gt; &lt;/a&gt;&lt;a class="ssg-item" href="#"&gt; <br/>
+         &lt;div class="item-icon"&gt; &lt;i class="os-icon os-icon-image"&gt;&lt;/i&gt; <br/>
+         &lt;/div&gt; <br/>
+         &lt;div class="item-name"&gt;<br/>
+           wed&lt;span&gt;din&lt;/span&gt;g.jpg <br/>
+         &lt;/div&gt; &lt;/a&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="ssg-nothing-found"&gt; <br/>
+        &lt;div class="icon-w"&gt; &lt;i class="os-icon os-icon-eye-off"&gt;&lt;/i&gt; <br/>
+        &lt;/div&gt; &lt;span&gt;No files were found. Try changing your query...&lt;/span&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="layout-w"&gt; &lt;!--<br/>
+        START - Main Menu<br/>
+        --------------------&gt; <br/>
+    &lt;div class="menu-w color-scheme-light color-style-transparent menu-position-side menu-side-left menu-layout-compact sub-menu-style-over sub-menu-color-bright selected-menu-color-light menu-activated-on-hover menu-has-selected-link"&gt; <br/>
+     &lt;div class="logged-user-w avatar-inline"&gt; <br/>
+      &lt;div class="logged-user-i"&gt; <br/>
+       &lt;div class="avatar-w"&gt; <br/>
+        &lt;img alt="" src="img/avatar1.jpg"&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="logged-user-info-w"&gt; <br/>
+        &lt;div class="logged-user-name" id="logged-user-name-new"&gt;<br/>
+          Jack Gomez <br/>
+        &lt;/div&gt; <br/>
+        &lt;div class="logged-user-role"&gt;<br/>
+          Customer <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+       &lt;div class="logged-user-toggler-arrow"&gt; <br/>
+        &lt;div class="os-icon os-icon-chevron-down"&gt;&lt;/div&gt; <br/>
+       &lt;/div&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+     &lt;h1 class="menu-page-header"&gt; Actions &lt;/h1&gt; <br/>
+     &lt;ul class="main-menu"&gt; <br/>
+      &lt;li class="sub-header"&gt; &lt;span&gt;Card types&lt;/span&gt; &lt;/li&gt; <br/>
+      &lt;li class="selected has-sub-menu"&gt; &lt;a href=""&gt; <br/>
+        &lt;div class="icon-w"&gt; <br/>
+         &lt;div class="os-icon os-icon-layout"&gt;&lt;/div&gt; <br/>
+        &lt;/div&gt; &lt;span&gt;Credit cards&lt;/span&gt;&lt;/a&gt; &lt;/li&gt; <br/>
+      &lt;li class=" has-sub-menu"&gt; &lt;a href=""&gt; <br/>
+        &lt;div class="icon-w"&gt; <br/>
+         &lt;div class="os-icon os-icon-layers"&gt;&lt;/div&gt; <br/>
+        &lt;/div&gt; &lt;span&gt;Debit cards&lt;/span&gt;&lt;/a&gt; &lt;/li&gt; <br/>
+      &lt;li class="sub-header"&gt; &lt;span&gt;Lending&lt;/span&gt; &lt;/li&gt; <br/>
+      &lt;li class=" has-sub-menu"&gt; &lt;a href=""&gt; <br/>
+        &lt;div class="icon-w"&gt; <br/>
+         &lt;div class="os-icon os-icon-package"&gt;&lt;/div&gt; <br/>
+        &lt;/div&gt; &lt;span&gt;Loans&lt;/span&gt;&lt;/a&gt; &lt;/li&gt; <br/>
+      &lt;li class=" has-sub-menu"&gt; &lt;a href=""&gt; <br/>
+        &lt;div class="icon-w"&gt; <br/>
+         &lt;div class="os-icon os-icon-package"&gt;&lt;/div&gt; <br/>
+        &lt;/div&gt; &lt;span&gt;Mortgages&lt;/span&gt;&lt;/a&gt; &lt;/li&gt; <br/>
+     &lt;/ul&gt; &lt;!--<br/>
+        &lt;img src="/img/credit-card1.jpg"  width="300px" height="300px" /&gt;<br/>
+        --&gt; <br/>
+    &lt;/div&gt; &lt;!--<br/>
+        END - Main Menu<br/>
+        --------------------&gt; <br/>
+    &lt;div class="content-w"&gt; <br/>
+     &lt;div class="content-i"&gt; <br/>
+      &lt;div class="content-box"&gt; <br/>
+       &lt;div class="element-wrapper compact pt-4"&gt; <br/>
+        &lt;div class="element-actions"&gt; &lt;a class="btn btn-primary btn-sm" href="#"&gt;&lt;i class="os-icon os-icon-ui-22"&gt;&lt;/i&gt;&lt;span&gt;Add Account&lt;/span&gt;&lt;/a&gt;&lt;a class="btn btn-success btn-sm" href="#"&gt;&lt;i class="os-icon os-icon-grid-10"&gt;&lt;/i&gt;&lt;span&gt;Make Payment&lt;/span&gt;&lt;/a&gt; <br/>
+        &lt;/div&gt; <br/>
+        &lt;h6 id="time" style="text-align: center;font-size: x-large;color:red"&gt;Your nearest branch closes in: 30m 5s&lt;/h6&gt; <br/>
+        &lt;h6 class="element-header"&gt; Financial Overview &lt;/h6&gt; <br/>
+        &lt;div class="element-box-tp"&gt; <br/>
+         &lt;div class="row"&gt; <br/>
+          &lt;div class="col-lg-12 col-xxl-12"&gt; &lt;!--START - BALANCES--&gt; <br/>
+           &lt;div class="element-balances"&gt; <br/>
+            &lt;div class="balance hidden-mobile" id="totalBalance"&gt; <br/>
+             &lt;div class="balance-title"&gt;<br/>
+               Total Balance <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="balance-value"&gt; &lt;span&gt;$350&lt;/span&gt;&lt;span class="trending trending-down-basic"&gt;&lt;span&gt;%7&lt;/span&gt;&lt;i class="os-icon os-icon-arrow-2-down"&gt;&lt;/i&gt;&lt;/span&gt; <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="balance-link"&gt; &lt;a class="btn btn-link btn-underlined" href="#"&gt;&lt;span&gt;View Statement&lt;/span&gt;&lt;i class="os-icon os-icon-arrow-right4"&gt;&lt;/i&gt;&lt;/a&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="balance hidden-mobile" id="flashSale" style="width:170px;height:100px;display:none;"&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="balance" id="creditAvailable"&gt; <br/>
+             &lt;div class="balance-title"&gt;<br/>
+               Credit Available <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="balance-value"&gt;<br/>
+               $17,800 <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="balance-link"&gt; &lt;a class="btn btn-link btn-underlined" href="#"&gt;&lt;span&gt;Request Increase&lt;/span&gt;&lt;i class="os-icon os-icon-arrow-right4"&gt;&lt;/i&gt;&lt;/a&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="balance hidden-mobile" id="flashSale2" style="display:none;"&gt; <br/>
+             &lt;img alt="" src="img/flaseSale3.gif" style="width:140px;height:100px;"&gt; <br/>
+            &lt;/div&gt; <br/>
+            &lt;div class="balance"&gt; <br/>
+             &lt;div class="balance-title"&gt;<br/>
+               Due Today <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="balance-value danger"&gt;<br/>
+               $180 <br/>
+             &lt;/div&gt; <br/>
+             &lt;div class="balance-link"&gt; &lt;a class="btn btn-link btn-underlined btn-gold" href="#"&gt;&lt;span&gt;Pay Now&lt;/span&gt;&lt;i class="os-icon os-icon-arrow-right4"&gt;&lt;/i&gt;&lt;/a&gt; <br/>
+             &lt;/div&gt; <br/>
+            &lt;/div&gt; <br/>
+           &lt;/div&gt; &lt;!--END - BALANCES--&gt; <br/>
+          &lt;/div&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; &lt;!--START - Transactions Table--&gt; <br/>
+       &lt;div class="element-wrapper"&gt; <br/>
+        &lt;h6 class="element-header"&gt; Recent Transactions &lt;/h6&gt; <br/>
+        &lt;div class="element-box-tp"&gt; <br/>
+         &lt;div class="table-responsive"&gt; <br/>
+          &lt;table id="transactionsTable" class="table table-padded"&gt; <br/>
+           &lt;thead&gt; <br/>
+            &lt;tr&gt; <br/>
+             &lt;th id="status" onclick="sortTable(0)" onmouseover="" style="cursor: pointer;"&gt; Status &lt;/th&gt; <br/>
+             &lt;th id="date" onclick="sortTable(1)" onmouseover="" style="cursor: pointer;"&gt; Date &lt;/th&gt; <br/>
+             &lt;th id="description" onclick="sortTable(2)" onmouseover="" style="cursor: pointer;"&gt; Description &lt;/th&gt; <br/>
+             &lt;th id="category" onclick="sortTable(3)" class="text-center" onmouseover="" style="cursor: pointer;"&gt; Category &lt;/th&gt; <br/>
+             &lt;th id="amount" onclick="sortTable(4)" class="text-right" onmouseover="" style="cursor: pointer;"&gt; Amount &lt;/th&gt; <br/>
+            &lt;/tr&gt; <br/>
+           &lt;/thead&gt; <br/>
+           &lt;tbody&gt; <br/>
+            &lt;tr&gt; <br/>
+             &lt;td class="nowrap"&gt; &lt;span class="status-pill smaller green"&gt;&lt;/span&gt;&lt;span&gt;Complete&lt;/span&gt; &lt;/td&gt; <br/>
+             &lt;td&gt; &lt;span&gt;Today&lt;/span&gt;&lt;span class="smaller lighter"&gt;1:52am&lt;/span&gt; &lt;/td&gt; <br/>
+             &lt;td class="cell-with-media"&gt; &lt;img alt="" src="img/company1.png" style="height: 25px;"&gt;&lt;span&gt;Starbucks coffee&lt;/span&gt; &lt;/td&gt; <br/>
+             &lt;td class="text-center"&gt; &lt;a class="badge badge-success" href=""&gt;Restaurant / Cafe&lt;/a&gt; &lt;/td&gt; <br/>
+             &lt;td class="text-right bolder nowrap"&gt; &lt;span class="text-success"&gt;+ 1,250.00 USD&lt;/span&gt; &lt;/td&gt; <br/>
+            &lt;/tr&gt; <br/>
+            &lt;tr&gt; <br/>
+             &lt;td class="nowrap"&gt; &lt;span class="status-pill smaller red"&gt;&lt;/span&gt;&lt;span&gt;Declined&lt;/span&gt; &lt;/td&gt; <br/>
+             &lt;td&gt; &lt;span&gt;Jan 19th&lt;/span&gt;&lt;span class="smaller lighter"&gt;3:22pm&lt;/span&gt; &lt;/td&gt; <br/>
+             &lt;td class="cell-with-media"&gt; &lt;img alt="" src="img/company2.png" style="height: 25px;"&gt;&lt;span&gt;Stripe Payment Processing&lt;/span&gt; &lt;/td&gt; <br/>
+             &lt;td class="text-center"&gt; &lt;a class="badge badge-danger" href=""&gt;Finance&lt;/a&gt; &lt;/td&gt; <br/>
+             &lt;td class="text-right bolder nowrap"&gt; &lt;span class="text-success"&gt;+ 952.23 USD&lt;/span&gt; &lt;/td&gt; <br/>
+            &lt;/tr&gt; <br/>
+            &lt;tr&gt; <br/>
+             &lt;td class="nowrap"&gt; &lt;span class="status-pill smaller yellow"&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt; &lt;/td&gt; <br/>
+             &lt;td&gt; &lt;span&gt;Yesterday&lt;/span&gt;&lt;span class="smaller lighter"&gt;7:45am&lt;/span&gt; &lt;/td&gt; <br/>
+             &lt;td class="cell-with-media"&gt; &lt;img alt="" src="img/company3.png" style="height: 25px;"&gt;&lt;span&gt;MailChimp Services&lt;/span&gt; &lt;/td&gt; <br/>
+             &lt;td class="text-center"&gt; &lt;a class="badge badge-warning" href=""&gt;Software&lt;/a&gt; &lt;/td&gt; <br/>
+             &lt;td class="text-right bolder nowrap"&gt; &lt;span class="text-danger"&gt;- 320.00 USD&lt;/span&gt; &lt;/td&gt; <br/>
+            &lt;/tr&gt; <br/>
+            &lt;tr&gt; <br/>
+             &lt;td class="nowrap"&gt; &lt;span class="status-pill smaller yellow"&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt; &lt;/td&gt; <br/>
+             &lt;td&gt; &lt;span&gt;Jan 23rd&lt;/span&gt;&lt;span class="smaller lighter"&gt;2:7pm&lt;/span&gt; &lt;/td&gt; <br/>
+             &lt;td class="cell-with-media"&gt; &lt;img alt="" src="img/company6.png" style="height: 25px;"&gt;&lt;span&gt;Shopify product&lt;/span&gt; &lt;/td&gt; <br/>
+             &lt;td class="text-center"&gt; &lt;a class="badge badge-primary" href=""&gt;Shopping&lt;/a&gt; &lt;/td&gt; <br/>
+             &lt;td class="text-right bolder nowrap"&gt; &lt;span class="text-success"&gt;+ 17.99 USD&lt;/span&gt; &lt;/td&gt; <br/>
+            &lt;/tr&gt; <br/>
+            &lt;tr&gt; <br/>
+             &lt;td class="nowrap"&gt; &lt;span class="status-pill smaller green"&gt;&lt;/span&gt;&lt;span&gt;Complete&lt;/span&gt; &lt;/td&gt; <br/>
+             &lt;td&gt; &lt;span&gt;Jan 7th&lt;/span&gt;&lt;span class="smaller lighter"&gt;9:51am&lt;/span&gt; &lt;/td&gt; <br/>
+             &lt;td class="cell-with-media"&gt; &lt;img alt="" src="img/company4.png" style="height: 25px;"&gt;&lt;span&gt;Ebay Marketplace&lt;/span&gt; &lt;/td&gt; <br/>
+             &lt;td class="text-center"&gt; &lt;a class="badge badge-danger" href=""&gt;Ecommerce&lt;/a&gt; &lt;/td&gt; <br/>
+             &lt;td class="text-right bolder nowrap"&gt; &lt;span class="text-danger"&gt;- 244.00 USD&lt;/span&gt; &lt;/td&gt; <br/>
+            &lt;/tr&gt; <br/>
+            &lt;tr&gt; <br/>
+             &lt;td class="nowrap"&gt; &lt;span class="status-pill smaller yellow"&gt;&lt;/span&gt;&lt;span&gt;Pending&lt;/span&gt; &lt;/td&gt; <br/>
+             &lt;td&gt; &lt;span&gt;Jan 9th&lt;/span&gt;&lt;span class="smaller lighter"&gt;7:45pm&lt;/span&gt; &lt;/td&gt; <br/>
+             &lt;td class="cell-with-media"&gt; &lt;img alt="" src="img/company7.png" style="height: 25px;"&gt;&lt;span&gt; Templates Inc&lt;/span&gt; &lt;/td&gt; <br/>
+             &lt;td class="text-center"&gt; &lt;a class="badge badge-primary" href=""&gt;Business&lt;/a&gt; &lt;/td&gt; <br/>
+             &lt;td class="text-right bolder nowrap"&gt; &lt;span class="text-success"&gt;+ 340.00 USD&lt;/span&gt; &lt;/td&gt; <br/>
+            &lt;/tr&gt; <br/>
+           &lt;/tbody&gt; <br/>
+          &lt;/table&gt; <br/>
+         &lt;/div&gt; <br/>
+        &lt;/div&gt; <br/>
+       &lt;/div&gt; &lt;!--END - Transactions Table--&gt; <br/>
+      &lt;/div&gt; <br/>
+     &lt;/div&gt; <br/>
+    &lt;/div&gt; <br/>
+   &lt;/div&gt; <br/>
+   &lt;div class="display-type"&gt;&lt;/div&gt; <br/>
+  &lt;/div&gt; <br/>
+  &lt;script&gt;<br/>
+function sortTable(n) {<br/>
+  var table, rows, switching, i, x, y, shouldSwitch, dir, switchcount = 0;<br/>
+  table = document.getElementById("transactionsTable");<br/>
+  switching = true;<br/>
+  //Set the sorting direction to ascending:<br/>
+  dir = "asc"; <br/>
+  /*Make a loop that will continue until<br/>
+  no switching has been done:*/<br/>
+  while (switching) {<br/>
+    //start by saying: no switching is done:<br/>
+    switching = false;<br/>
+    rows = table.rows;<br/>
+    /*Loop through all table rows (except the<br/>
+    first, which contains table headers):*/<br/>
+    for (i = 1; i &lt; (rows.length - 1); i++) {<br/>
+      //start by saying there should be no switching:<br/>
+      shouldSwitch = false;<br/>
+      /*Get the two elements you want to compare,<br/>
+      one from current row and one from the next:*/<br/>
+      x = rows[i].getElementsByTagName("TD")[n];<br/>
+      y = rows[i + 1].getElementsByTagName("TD")[n];<br/>
+      /*check if the two rows should switch place,<br/>
+      based on the direction, asc or desc:*/<br/>
+      if (dir == "asc") {<br/>
+        if (x.innerHTML.toLowerCase() &gt; y.innerHTML.toLowerCase()) {<br/>
+          //if so, mark as a switch and break the loop:<br/>
+          shouldSwitch= true;<br/>
+          break;<br/>
+        }<br/>
+      } else if (dir == "desc") {<br/>
+        if (x.innerHTML.toLowerCase() &lt; y.innerHTML.toLowerCase()) {<br/>
+          //if so, mark as a switch and break the loop:<br/>
+          shouldSwitch = true;<br/>
+          break;<br/>
+        }<br/>
+      }<br/>
+    }<br/>
+    if (shouldSwitch) {<br/>
+      /*If a switch has been marked, make the switch<br/>
+      and mark that a switch has been done:*/<br/>
+      rows[i].parentNode.insertBefore(rows[i + 1], rows[i]);<br/>
+      switching = true;<br/>
+      //Each time a switch is done, increase this count by 1:<br/>
+      switchcount ++;      <br/>
+    } else {<br/>
+      /*If no switching has been done AND the direction is "asc",<br/>
+      set the direction to "desc" and run the while loop again.*/<br/>
+      if (switchcount == 0 && dir == "asc") {<br/>
+        dir = "desc";<br/>
+        switching = true;<br/>
+      }<br/>
+    }<br/>
+  }<br/>
+}<br/>
+    //ad<br/>
+    var urlParams = new URLSearchParams(window.location.search);<br/>
+    if(urlParams.get("showAd") === "true") {<br/>
+      document.getElementById("flashSale").style.display = "block";<br/>
+      document.getElementById("flashSale2").style.display = "block";<br/>
+      document.getElementById("totalBalance").style.display = "none";<br/>
+      document.getElementById("creditAvailable").style.display = "none";<br/>
+    }<br/>
+  &lt;/script&gt; <br/>
+ &lt;/body&gt;<br/>
+&lt;/html&gt;</code></pre></div></body></html>
